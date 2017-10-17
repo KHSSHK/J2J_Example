@@ -1,0 +1,408 @@
+From 42599e30b8241e4341e0b60c1b214847dcdf2462 Mon Sep 17 00:00:00 2001
+From: kanghs <khs86630@naver.com>
+Date: Sun, 13 Aug 2017 19:57:46 +0900
+Subject: [PATCH] =?UTF-8?q?Jump=20to=20JAVA=201=EC=9E=A5=20~=204=EC=9E=A5?=
+ =?UTF-8?q?=20=EC=98=88=EC=A0=9C=20=ED=92=80=EC=9D=B4?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ .gitignore                                        |   6 +++++
+ HelloWorld/.classpath                             |   6 +++++
+ HelloWorld/.project                               |  17 ++++++++++++
+ HelloWorld/bin/HelloWorld.class                   | Bin 0 -> 534 bytes
+ HelloWorld/src/HelloWorld.java                    |  23 ++++++++++++++++
+ TestForeach/.classpath                            |   6 +++++
+ TestForeach/.project                              |  17 ++++++++++++
+ TestForeach/bin/J2J_TestForeach/TestForeach.class | Bin 0 -> 1103 bytes
+ TestForeach/src/J2J_TestForeach/TestForeach.java  |  31 ++++++++++++++++++++++
+ TestString/.classpath                             |   6 +++++
+ TestString/.project                               |  17 ++++++++++++
+ TestString/bin/J2J_TestString/TestString.class    | Bin 0 -> 1011 bytes
+ TestString/src/J2J_TestString/TestString.java     |  23 ++++++++++++++++
+ Value/.classpath                                  |   6 +++++
+ Value/.project                                    |  17 ++++++++++++
+ Value/bin/J2J_Value/Value.class                   | Bin 0 -> 1142 bytes
+ Value/src/J2J_Value/Value.java                    |  24 +++++++++++++++++
+ 17 files changed, 199 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 HelloWorld/.classpath
+ create mode 100644 HelloWorld/.project
+ create mode 100644 HelloWorld/bin/HelloWorld.class
+ create mode 100644 HelloWorld/src/HelloWorld.java
+ create mode 100644 TestForeach/.classpath
+ create mode 100644 TestForeach/.project
+ create mode 100644 TestForeach/bin/J2J_TestForeach/TestForeach.class
+ create mode 100644 TestForeach/src/J2J_TestForeach/TestForeach.java
+ create mode 100644 TestString/.classpath
+ create mode 100644 TestString/.project
+ create mode 100644 TestString/bin/J2J_TestString/TestString.class
+ create mode 100644 TestString/src/J2J_TestString/TestString.java
+ create mode 100644 Value/.classpath
+ create mode 100644 Value/.project
+ create mode 100644 Value/bin/J2J_Value/Value.class
+ create mode 100644 Value/src/J2J_Value/Value.java
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..ce94b16
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,6 @@
++*.cfs
++*.fnm
++Value/.settings/
++.metadata/
++.recommenders/
++*.prefs
+diff --git a/HelloWorld/.classpath b/HelloWorld/.classpath
+new file mode 100644
+index 0000000..51a8bba
+--- /dev/null
++++ b/HelloWorld/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="bin"/>
++</classpath>
+diff --git a/HelloWorld/.project b/HelloWorld/.project
+new file mode 100644
+index 0000000..9152186
+--- /dev/null
++++ b/HelloWorld/.project
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>HelloWorld</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+diff --git a/HelloWorld/bin/HelloWorld.class b/HelloWorld/bin/HelloWorld.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..4ef118329090efb1700434ec506c894296544a8c
+GIT binary patch
+literal 534
+zcmZutOHaZ;5dM}|X|00A;#<KJc(4}}4;U{d#zUhf7(94dV1rAxT~mt2pQQ&)Jop3r
+zQO0R8sU%!xc4qc_%zXcRegQbffq@)@bt#n6cREr-0|kcam_Kn(@o?l__s3!oGn7tc
+zDC0ARe5>7KD4gq|u#ksoqlgki#h0PDng)Fl-SWN?434h{T=jS)llre&h#%yH!S*x7
+z4zUGXh79%Ay`L#}<4A_1PP=Df6*U9SoUiW7Bo={<HMrzSPsyS?1554Q5Hcpb;6bO1
+zb<#`ao*U_k7B;bMV2h!as?7sz>|mF{cuY7HxpG^JOp$3GjcAqH0?%~OuAW8%aUqjS
+zRI+7{5=AsYp6UKTj$U*>iUw64Wk$Jp_<{0kI<_b#W1x&BiuUXS<z=c&te`@j1bmW`
+gQSS{^r~ZzOjKHE1;1WgsABl-Q>{FkiK{1EsFJysk+W-In
+
+literal 0
+HcmV?d00001
+
+diff --git a/HelloWorld/src/HelloWorld.java b/HelloWorld/src/HelloWorld.java
+new file mode 100644
+index 0000000..5ab1d0e
+--- /dev/null
++++ b/HelloWorld/src/HelloWorld.java
+@@ -0,0 +1,23 @@
++
++/**
++ * @author kanghs
++ *
++ */
++
++
++public class HelloWorld 
++{
++	/*
++	 * public 	: 메소드의 접근제어자
++	 * static 	: 메소드에 static이 지정되어 있는 경우 이 메소드는 인스턴스 생성없이 실행할 수 있음을 의미
++	 * void 	: 메소드의 리턴값이 없음
++	 * String 	: 문자열을 나타내는 자바의 자료형
++	 * args[]	: String 자료형에 대한 변수명으로 args뒤에 []가 있으므로 한 개가 아닌 여러개의 값으로 이루어진 배열을 의미
++	 * System.out.println - 표준출력으로 데이터를 보내는 자바의 내장 메소드로 println 메소드로 들어오는 문자열의 값을 화면에 출력
++	 * 
++	 */
++	public static void main(String args[])
++	{
++		System.out.println("Hellow World");
++	}
++}
+diff --git a/TestForeach/.classpath b/TestForeach/.classpath
+new file mode 100644
+index 0000000..51a8bba
+--- /dev/null
++++ b/TestForeach/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="bin"/>
++</classpath>
+diff --git a/TestForeach/.project b/TestForeach/.project
+new file mode 100644
+index 0000000..17dd67a
+--- /dev/null
++++ b/TestForeach/.project
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>TestForeach</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+diff --git a/TestForeach/bin/J2J_TestForeach/TestForeach.class b/TestForeach/bin/J2J_TestForeach/TestForeach.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..6b6dc3706a2ee212b0d4760387d4bce9a1d406cf
+GIT binary patch
+literal 1103
+zcmaJ=T~8B16g^W4yDbY8C@3Nd_|@{YiipS}AEG3Zf+i4*_+W;zp^NP<*-lmdihsao
+zeSoNm@yQ4OiGM;oyW2t=jM?PgnR{pMoO|xsUw^)S2QY;v8e#(dtCOp*H|?@o@qAn6
+z3ufI~LtG%WFW*YDDBV5t+0MS5R{||_j_as-fu>A$OCY}N?b=B+Az`2yEdm`m$F<ih
+zr5)SflsiRRpeyI)WpPXTPOz^A<Er441qO2efnc$GNjk1TZ{}6*49bS`9e2;lZfWQg
+z=nfMV<rK{&-<O9ur>v4lA)zBpl%7j?DfAk+fQ#JA-Ccp6OkKICGb_8T;}Q?3cb<;R
+z0?n%6+u_|S2CiaIKzEewOXc|iplnnjeD`TJZna_<*EL*Y(`Tq^Spzq4lP$USd-9mB
+zRj6av(vWE&J?b=p5sYaVZA=}Om0dD0j)|bl3QP7xkQ~o^PJ$FK+p=UOaT}8w?$nrS
+zOdGh1DFN*uxKSk44b+@69W*v=;67$}wjj&vVGoqRHXD-u9!J^zj}h^(8%lxsD!Rr&
+zal|dri9jdkMogj`#dCO26Hq<>r*oe>Ut*q5v~4Jvf3qeJLh)&s6-aJ)6+dsUIDtY_
+zb-JGjKwt<Ym46Bl<BGzj)wnb11%30#G4xMiI!PO(8AL0sQC%Bo<1T@AbTATJ{>fr-
+z`o(WZy*y^Wqg~xc=y@^P)fc(`&>dl5{Ug%jUoa%_1Gm;bBRh5klYx5zA5MM;@5T|l
+zI}Dw+owkD?RgO*!ppP*7F-^aKD<P)Au$e_Xz%0+}n1O{kqB4o=A?Ar|f$;!&lw0I#
+aiIFs7Csb`*!y}F5H9kluu*_TxkN*OV9{gSa
+
+literal 0
+HcmV?d00001
+
+diff --git a/TestForeach/src/J2J_TestForeach/TestForeach.java b/TestForeach/src/J2J_TestForeach/TestForeach.java
+new file mode 100644
+index 0000000..67b9bcd
+--- /dev/null
++++ b/TestForeach/src/J2J_TestForeach/TestForeach.java
+@@ -0,0 +1,31 @@
++package J2J_TestForeach;
++
++import java.util.ArrayList;
++
++public class TestForeach 
++{
++	public static void main(String[] args) 
++	{
++		// 자료형<제네릭스> 변수  = new 상속자료형<제네릭스>();
++		// 제네릭스를 사용하는 이유는 변수의 형변환으로 인한 에러를 방지하고자
++		// 초기부터 특정 자료형만 지정하여 뒤에 나올 형변환 문제를 최소화하고
++		// 명확하게 자료형에는 특정 자료형으로 이루어진 배열들로 이루어져 있다고
++		// 선언 함으로써 오해의 소지를 줄인다.
++		ArrayList<String> numbers = new ArrayList<String>();
++		numbers.add("one");
++		numbers.add("two");
++		numbers.add("three");
++		
++		/*
++		 * for each 문은 for(type var : interate)
++		 * 특정 자료형을 순사적으로 for문을 사용하여 읽어들일때 사용한다.
++		 * JAVA의 foreach문은 1씩만 순차적으로 증가하여
++		 * 이 부분만 주의하여 사용해야 한다.
++		 */
++		for(String number : numbers)
++		{
++			System.out.println(number);
++		}
++		
++	}
++}
+diff --git a/TestString/.classpath b/TestString/.classpath
+new file mode 100644
+index 0000000..51a8bba
+--- /dev/null
++++ b/TestString/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="bin"/>
++</classpath>
+diff --git a/TestString/.project b/TestString/.project
+new file mode 100644
+index 0000000..7992362
+--- /dev/null
++++ b/TestString/.project
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>TestString</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+diff --git a/TestString/bin/J2J_TestString/TestString.class b/TestString/bin/J2J_TestString/TestString.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..638cf74a0d7d1ea5d61c4ac212beec5adb08217a
+GIT binary patch
+literal 1011
+zcmZ`&U31bv6g|sFQ)m>L0*YwuhaX9+MQf{7+S-ca2*X%ss5ny}oCVgJP9T^BNB@I=
+zMjzsg5B>mul;hom4q)la?!9++&pG$z<j>z<zX5FExq=8ozPet0e<)n9?m1@nxHt?I
+z#2C^i{4+0FoK6m!C!*ysOl_N8)7xc;>PCYhR<_$Bi6{~(;+SGc)y%GV)$cTgbI6;P
+zV9;uIi(3uum@*#}W8O#8Whm6n6;LAZ4mZ0DIsIL2C?r%`G8)sEWk|jhmSrzgNoN9c
+z$STN;$*zBOJ<(B-!zGez_o;(y2xi*F*VMD@T<}gQi98Alu8hA9rlR61u2JXWQ=eNT
+zI;)S!3FlHWj*_^JMFk5CbAi}#d=*PrW>9*P(xRqf`jKqmCPh-bq`$2~he4OjZd-gg
+z`0yXoY2y{iv?>AbNSKO*S!0O5wH>Q1aqg+Ok9C@jBYGBZiG9mr*cuf*fEsDz6#Q&S
+zvTaDV&2#iLB<CX)TX@WnaQjU+n40`<m5MP5FprXoZR{}2c=nrKPdH`nl2bDJgzNO#
+zxN}TXonQh6#-+i|xPzLn+kK}cUYOE?siCje<XtR+VCg>qA{3EvX;mmI(#~j)ul&UH
+z_ux25t2_ohn4wh-FVKF0vIH(7MHTt@8)5_p>}l!R4`{1e+Q(%d^Fe&W$1NW#VXWQt
+zQS|XZW>Lk*!$Iuh2}MKR`2bfT<}|U)q5usB*?bcjJS9&{J-Lt*yHt@Hcd&<jQpE6#
+I@(9ZR0E?OB2mk;8
+
+literal 0
+HcmV?d00001
+
+diff --git a/TestString/src/J2J_TestString/TestString.java b/TestString/src/J2J_TestString/TestString.java
+new file mode 100644
+index 0000000..e85fb14
+--- /dev/null
++++ b/TestString/src/J2J_TestString/TestString.java
+@@ -0,0 +1,23 @@
++package J2J_TestString;
++
++public class TestString 
++{
++	public static void main(String[] arg)
++	{
++		String a = "Hello Java";
++		
++		/*
++		 * equals은 동일한 문자열을 비교할 때 쓰임, 동일하면 true, 아니면 false을 리턴
++		 * indexOf는 문자열의 인덱스(배열번호)를 알려준다
++		 * replaceAll은 변경할 문자열을 입력하면 그 문자열의 인덱스를 기억하고 그 위치에 변경할 문자열을 기록한다.
++		 * substring은 지정된 인덱스의 범위에 있는 문자열들을 불러온다.
++		 * toUppeCase은 소문자를 대문자로 변경한다.
++		 */
++		System.out.println(a.equals("Hello Java")); 
++		System.out.println(a.indexOf("Java"));
++		System.out.println(a.replaceAll("Java", "World"));
++		System.out.println(a.substring(0, 4));
++		System.out.println(a.toUpperCase());
++		
++	}
++}
+diff --git a/Value/.classpath b/Value/.classpath
+new file mode 100644
+index 0000000..51a8bba
+--- /dev/null
++++ b/Value/.classpath
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<classpath>
++	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
++	<classpathentry kind="src" path="src"/>
++	<classpathentry kind="output" path="bin"/>
++</classpath>
+diff --git a/Value/.project b/Value/.project
+new file mode 100644
+index 0000000..a88738d
+--- /dev/null
++++ b/Value/.project
+@@ -0,0 +1,17 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<projectDescription>
++	<name>Value</name>
++	<comment></comment>
++	<projects>
++	</projects>
++	<buildSpec>
++		<buildCommand>
++			<name>org.eclipse.jdt.core.javabuilder</name>
++			<arguments>
++			</arguments>
++		</buildCommand>
++	</buildSpec>
++	<natures>
++		<nature>org.eclipse.jdt.core.javanature</nature>
++	</natures>
++</projectDescription>
+diff --git a/Value/bin/J2J_Value/Value.class b/Value/bin/J2J_Value/Value.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..354564228af7cb256cc98072ea7c97776c73516a
+GIT binary patch
+literal 1142
+zcmZ8g+fEZv6kUg2rk4RqX#qurDqxF15fH_qVks4B1(T8*f{{$y0fzKq%9MbAqCeoX
+znp9$<AK)MO=6{$N*O@74u}RN5`?k*7ySqRCe)|Dn0h<cC1bQ=bnZ3MLZs>9ARNxc{
+z9BC(7ysT9Z;#-9yy=V%!myN1nJ{E99V|fARYOSRE;DA?!3vTjcjjF!cs1)@2wpJ+X
+z0>NypsFm|t-H>+6=`;_GV}ZWxf6pdJS<#HDz(902+kQT0){W{xB9?b`|89QySOVND
+z-pHTr)bx;h<;}16{Cx0Y5LXloUDBO9J2v%-imMo==30X-gl%4<7Jo@nlhnFaN%(Lb
+zBMNQ^^jptf4yzbNL_m2fE6SATjBdp8vgVcyjY&t^c1%deZRyC^j+k^zN=GV|_h3q(
+zXZ&<(biBlGO`;Dom{kyGpxtru%+yuf#T;Kfk-y8<KBYyIv5u+89135+qJn#zeY-k$
+zSgV_|{Juaan(HjGLRPy=DjtFpcUxVNemUAf-Wqx5uV61hqQ!Q3LgaC1^#f|`tZ0$&
+z4Z~V10kJ`2|H4Sq;BK%zMlv)?7e<PG+lHKgeVgYH3+wtRbCbLtZ^?}mIRRg;)~FZt
+zv>_MHXHm?^VITs^;+g|pym3Q$DzxH6L3B-ih3AtM_VJWqu)xn#wG)Wlw7lp+FFh<4
+zv&@secg|&XErdWagy51ZgwT>A4{tzS^auJE)z26hZsHnYtcjb1NE73PAy*SoiAoE-
+zHU{q~-{IJCg#G83&h0o`=nAXnn9uFFZEWJftG41K0#w4kFg$Qlr3XH0^CL*zgS-t>
+z_Xu+)(1&Sy7toJogpfiQSq$KeS+d*LtYt@xJtB7D6p!(Q{W@`i6+E^0>qugi)9FTq
+l^=lkw5Qj+frjVtGXS{j&;vUwqLDmuMB7^7FB(oOli+@Sy<VXMj
+
+literal 0
+HcmV?d00001
+
+diff --git a/Value/src/J2J_Value/Value.java b/Value/src/J2J_Value/Value.java
+new file mode 100644
+index 0000000..fec9557
+--- /dev/null
++++ b/Value/src/J2J_Value/Value.java
+@@ -0,0 +1,24 @@
++package J2J_Value;
++
++public class Value 
++{
++	public static void main(String[] arg)
++	{
++		int 	iValue 	= 1;
++		float 	fValue	= 1.f; // float형은 숫자끝에 f를 붙여주어야 float형임을 인식한다.
++		long 	lValue 	= 1000000000000000000L; // long형은 int의 범위보다 클때 L을 붙여주어야 long형임을 인지하고 오해가 없다. 소문자 l도 가능하나 1과 헷갈리니 L을 쓰자
++		double 	dValue  = 3.14159265358979323846;
++		double 	dValue2 = 123.4;
++		double 	dValue3	= 1.234e2; // e2는 10의 제곱을 나타냄
++		byte	bHex	= 0xC;
++		short	sOct	= 023;
++		
++		System.out.println(iValue);
++		System.out.println(fValue);
++		System.out.println(lValue);
++		System.out.println(dValue);
++		System.out.println(dValue2);
++		System.out.println(dValue3);
++		System.out.printf("%x, %d, %o, %d", bHex, bHex, sOct, sOct);
++	}
++}
+-- 
+2.12.2.windows.2
+

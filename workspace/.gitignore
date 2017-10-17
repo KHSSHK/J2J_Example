@@ -1,0 +1,6 @@
+*.cfs
+*.fnm
+Value/.settings/
+.metadata/
+.recommenders/
+*.prefs
